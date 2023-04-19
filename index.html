@@ -10,22 +10,24 @@
           charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg">
-      <a class="more_inf"
+    <div class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg">
+      <a class="header__link"
          href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
+    <div class="todo">
+      <div id="todo__add-task">
+        <label for="add-task">Add Item</label>
+        <div class="todo__add-task-row">
+          <input id="add-task"
+                 class="task"
+                 type="text">
           <button>Add</button>
         </div>
-      </p>
+      </div>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
+      <ul id="todo__incomplete-tasks">
+        <li class="todo__task">
           <input type="checkbox">
           <label class="task">Pay Bills</label>
           <input type="text"
@@ -35,7 +37,7 @@
             <img src="./remove.svg">
           </button>
         </li>
-        <li class="editMode">
+        <li class="todo__task_edit-mode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
           <input type="text"
@@ -48,8 +50,8 @@
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
+      <ul id="todo__completed-tasks">
+        <li class="todo__task">
           <input type="checkbox" checked>
           <label class="task">See the Doctor</label>
           <input type="text"
